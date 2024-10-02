@@ -7,8 +7,8 @@ import numpy as np
 st.title('Proyek Analisis Data: Bike Sharing Data')
 st.header('ML-67 | Ida Ayu Pradwita Nashanti')
 
-dfhour_numeric = pd.read_csv(r'D:\101 itu nomor kami\7th on 101\Dataset Dashboard\dfhournum.csv')
-filtered = pd.read_csv(r'D:\101 itu nomor kami\7th on 101\Dataset Dashboard\filtered.csv')
+dfhour_numeric = pd.read_csv('dfhournum.csv')
+filtered = pd.read_csv('filtered.csv')
 
 filtered['dteday'] = pd.to_datetime(filtered['dteday'])
 min_date = filtered["dteday"].min()
